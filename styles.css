@@ -1,0 +1,73 @@
+/*
+  Road Trip Mix: the playlist's stylesheet.
+
+  The rules under "Ready to use" give the page its fonts and spacing. Leave them as they are.
+  Your eight rules go at the bottom, under "Your rules". index.html has no classes and no ids, and it must stay
+  exactly as it is, so every rule you write reaches its elements with selectors alone.
+
+  The style guide
+    stripe         #f1f5f9           the background of every even-numbered song (2, 4, 6 ...)
+    now playing    #fff3c4           the background of the song that's playing: its li has aria-current="true"
+    badge          #334155           the background of the explicit songs' E badge, with #ffffff (white) text
+    play icon      "▶ "              before the playing song's title (copy the triangle from here)
+    hover          #e0f2fe           the background of the song under the pointer
+    focus          3px solid #1d4ed8 the outline of a checkbox that has keyboard focus
+    heart          #e63973           a 4px solid left border on every liked song (its checkbox is checked)
+    outside link   " ↗"              after every link whose address starts with https:// (copy the arrow from here)
+
+  The eight rules
+    1. Stripe every even-numbered song.
+    2. Give the playing song the now-playing background. It is song 4, an even one, so this rule must beat rule 1.
+    3. Give the E badge of the explicit songs its colors. Their li has data-rating="explicit". The "min" in the
+       header is an abbr too, and it must stay as it is.
+    4. Put the play icon before the playing song's title.
+    5. Give the song under the pointer the hover background.
+    6. Give every checkbox the focus outline, only when it has keyboard focus.
+    7. Give every liked song the heart border. It must follow the checkbox: tick a song, and its border appears.
+    8. Put the outside-link arrow after every link whose address starts with https://.
+*/
+
+/* Ready to use */
+
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1rem;
+  color: #1e293b;
+  background-color: #ffffff;
+}
+
+h1 {
+  margin-bottom: 0.25rem;
+}
+
+li {
+  padding: 0.75rem 1rem;
+}
+
+li span {
+  margin-left: 0.5rem;
+  color: #64748b;
+}
+
+abbr {
+  margin-left: 0.5rem;
+  padding: 0 0.3rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+
+input {
+  margin-left: 0.75rem;
+  accent-color: #e63973;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* Your rules */
+
